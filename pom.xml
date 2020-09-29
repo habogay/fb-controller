@@ -5,12 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.fcs</groupId>
-	<artifactId>spring-appengine-skeleton</artifactId>
+	<artifactId>fb-controller</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>spring-boot-gcp-template</name>
-	<description>Spring boot gcp template</description>
+	<name>fb-controller</name>
+	<description>fb-controller</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -37,10 +37,7 @@
 	    </dependencyManagement>
 
 	<dependencies>
-	 <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-gcp-starter-firestore</artifactId>
-        </dependency>
+	 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -92,6 +89,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+        <!-- https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j -->
+        <dependency>
+            <groupId>net.sourceforge.tess4j</groupId>
+            <artifactId>tess4j</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+
 	</dependencies>
 
 	<build>
